@@ -68,7 +68,7 @@ fun ReviewScreen(app: VocabApp, onBack: () -> Unit) {
             )
             else -> when (val s = state) {
                 is UiState.Loading -> FullScreenLoading(modifier = Modifier.padding(padding))
-                is UiState.Empty -> FullScreenMessage(s.message, modifier = Modifier.padding(padding))
+                is UiState.Empty -> ReviewEmptyBody(s.message, onGoHome = onBack, modifier = Modifier.padding(padding))
                 is UiState.Error -> FullScreenMessage(s.message, modifier = Modifier.padding(padding))
                 is UiState.Success -> ReviewListBody(
                     words = s.data,
@@ -76,6 +76,21 @@ fun ReviewScreen(app: VocabApp, onBack: () -> Unit) {
                     modifier = Modifier.padding(padding)
                 )
             }
+        }
+    }
+}
+
+@Composable
+private fun ReviewEmptyBody(message: String, onGoHome: () -> Unit, modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.fillMaxSize().padding(24.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(message, style = MaterialTheme.typography.bodyLarge, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+        Spacer(modifier = Modifier.height(20.dp))
+        Button(onClick = onGoHome, modifier = Modifier.fillMaxWidth()) {
+            Text("Về trang chủ để học từ mới")
         }
     }
 }

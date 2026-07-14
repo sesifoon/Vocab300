@@ -63,7 +63,11 @@ class ReviewViewModel(
         val current = _session.value ?: return
         val word = current.words.getOrNull(current.currentIndex) ?: return
         viewModelScope.launch {
-            progressRepository.recordAnswer(word.id, known, System.currentTimeMillis())
+            progressRepository.recordAnswer(
+                word.id,
+                if (known) com.vocab300.app.domain.AnswerResult.CORRECT else com.vocab300.app.domain.AnswerResult.INCORRECT,
+                System.currentTimeMillis()
+            )
         }
         val nextIndex = current.currentIndex + 1
         _session.value = current.copy(

@@ -47,4 +47,21 @@ class ImportDecisionTest {
         )
         assertTrue(shouldImport)
     }
+
+    // ---- v1.1.0: quy tắc mới dựa trên sourceVersion ----
+
+    @Test
+    fun `lan dau chua co sourceVersion nao duoc luu thi phai import`() {
+        assertTrue(ImportDecision.shouldImport(storedSourceVersion = null, currentSourceVersion = "v1"))
+    }
+
+    @Test
+    fun `sourceVersion giong nhau thi khong import lai`() {
+        assertFalse(ImportDecision.shouldImport(storedSourceVersion = "v1", currentSourceVersion = "v1"))
+    }
+
+    @Test
+    fun `sourceVersion khac nhau (VD nang tu 300 len 1000) thi import lai de bo sung tu moi`() {
+        assertTrue(ImportDecision.shouldImport(storedSourceVersion = "v1-300", currentSourceVersion = "v2-1000"))
+    }
 }

@@ -2,10 +2,13 @@ package com.vocab300.app.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Card
@@ -48,7 +51,7 @@ fun SettingsScreen(app: VocabApp, onBack: () -> Unit) {
     if (showResetConfirm) {
         ConfirmDialog(
             title = "Đặt lại tiến độ",
-            message = "Toàn bộ tiến độ học, XP, tim và chuỗi ngày sẽ bị xóa vĩnh viễn. Bạn có chắc chắn?",
+            message = "Toàn bộ tiến độ học, XP và chuỗi ngày sẽ bị xóa vĩnh viễn. Bạn có chắc chắn?",
             confirmText = "Đặt lại",
             cancelText = "Hủy",
             onConfirm = { showResetConfirm = false; viewModel.resetProgress() },
@@ -69,13 +72,17 @@ fun SettingsScreen(app: VocabApp, onBack: () -> Unit) {
         }
     ) { padding ->
         Column(
-            modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp)
         ) {
             Column {
                 Text("Mục tiêu học mỗi ngày", style = MaterialTheme.typography.titleMedium)
-                Row(
-                    modifier = Modifier.padding(top = 8.dp),
+                FlowRow(
+                    modifier = Modifier.padding(top = 8.dp).fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     listOf(5, 10, 15, 20).forEach { goal ->
@@ -93,7 +100,7 @@ fun SettingsScreen(app: VocabApp, onBack: () -> Unit) {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text("Âm thanh", style = MaterialTheme.typography.titleMedium)
+                Text("Âm thanh", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f, fill = false))
                 Switch(
                     checked = stats?.soundEnabled ?: true,
                     onCheckedChange = { viewModel.setSoundEnabled(it) }
@@ -102,8 +109,8 @@ fun SettingsScreen(app: VocabApp, onBack: () -> Unit) {
 
             Column {
                 Text("Chế độ tối", style = MaterialTheme.typography.titleMedium)
-                Row(
-                    modifier = Modifier.padding(top = 8.dp),
+                FlowRow(
+                    modifier = Modifier.padding(top = 8.dp).fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     FilterChip(
@@ -128,7 +135,7 @@ fun SettingsScreen(app: VocabApp, onBack: () -> Unit) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text("Đặt lại tiến độ", style = MaterialTheme.typography.titleMedium)
                     Text(
-                        "Xóa toàn bộ XP, tim, chuỗi ngày và tiến độ học đã lưu.",
+                        "Xóa toàn bộ XP, chuỗi ngày và tiến độ học đã lưu.",
                         style = MaterialTheme.typography.bodyMedium,
                         modifier = Modifier.padding(top = 4.dp, bottom = 12.dp)
                     )

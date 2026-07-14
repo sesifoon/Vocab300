@@ -74,7 +74,10 @@ fun HomeScreen(
             item { StatsRow(state) }
 
             item {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                androidx.compose.foundation.layout.FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
                     FilterChip(
                         selected = state.selectedFilter == null,
                         onClick = { viewModel.setFilter(null) },
@@ -140,24 +143,23 @@ private fun StatsRow(state: HomeUiState) {
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        StatChip(label = "XP hôm nay", value = "${stats?.xpToday ?: 0}/${(stats?.dailyGoal ?: 10) * 10}")
-        StatChip(label = "Chuỗi ngày", value = "🔥 ${stats?.streakDays ?: 0}")
-        StatChip(label = "Tim", value = "❤️ ${stats?.hearts ?: 0}/${stats?.maxHearts ?: 5}")
+        StatChip(label = "XP hôm nay", value = "${stats?.xpToday ?: 0}/${(stats?.dailyGoal ?: 10) * 10}", modifier = Modifier.weight(1f))
+        StatChip(label = "Chuỗi ngày", value = "🔥 ${stats?.streakDays ?: 0}", modifier = Modifier.weight(1f))
     }
 }
 
 @Composable
-private fun StatChip(label: String, value: String) {
+private fun StatChip(label: String, value: String, modifier: Modifier = Modifier) {
     Card(
-        modifier = Modifier.height(72.dp),
+        modifier = modifier.height(72.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)
     ) {
         Column(
             modifier = Modifier.padding(12.dp).fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(value, style = MaterialTheme.typography.titleMedium)
-            Text(label, style = MaterialTheme.typography.bodyMedium)
+            Text(value, style = MaterialTheme.typography.titleMedium, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+            Text(label, style = MaterialTheme.typography.bodyMedium, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
         }
     }
 }

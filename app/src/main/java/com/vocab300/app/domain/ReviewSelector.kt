@@ -3,11 +3,17 @@ package com.vocab300.app.domain
 import com.vocab300.app.data.local.entity.WordProgressEntity
 
 /**
- * Thuật toán ôn tập đơn giản (không dùng spaced-repetition phức tạp):
- * - Từ sai nhiều được ưu tiên cao nhất.
- * - Từ đã đến hạn ôn (nextReviewAt <= now) hoặc lâu chưa học được ưu tiên.
- * - Từ có mức thành thạo cao (4-5) và chưa đến hạn thì ít được chọn hơn.
- * - Từ được đánh dấu "đã thuộc" (isKnown) bị loại trừ trừ khi không còn từ nào khác để ôn.
+ * Chọn danh sách từ ưu tiên cho phiên Ôn tập, theo đúng thứ tự bậc thang yêu cầu (v1.1.0):
+ *
+ * 1. Từ đã đến hạn ôn (`nextReviewAt <= now`) — quá hạn càng lâu càng ưu tiên.
+ * 2. Nếu vẫn còn chỗ trống (chưa đủ [limit]), bổ sung từ có số lần sai cao nhất (chưa dùng ở bậc 1).
+ * 3. Nếu vẫn còn chỗ trống, bổ sung từ có mastery thấp nhất (chưa dùng ở 2 bậc trên).
+ * 4. Nếu người dùng CHƯA HỌC từ nào (`lastReviewedAt == null` cho toàn bộ), trả về danh sách RỖNG —
+ *    tầng UI (ReviewScreen) chịu trách nhiệm hiển thị thông báo rõ ràng và mời bắt đầu học từ mới,
+ *    KHÔNG được hiển thị màn hình trống hoặc màn hình kẹt.
+ *
+ * Từ được đánh dấu "đã thuộc" (`isKnown`) bị loại trừ trước, trừ khi đó là toàn bộ danh sách đã học
+ * (khi đó vẫn cho phép ôn lại để tránh trả về rỗng một cách không cần thiết).
  */
 object ReviewSelector {
 
@@ -16,41 +22,51 @@ object ReviewSelector {
         nowMillis: Long,
         limit: Int
     ): List<WordProgressEntity> {
-        if (allProgress.isEmpty() || limit <= 0) return emptyList()
+        if (limit <= 0) return emptyList()
 
-        val candidates = allProgress.filter { !it.isKnown }
-            .ifEmpty { allProgress } // nếu tất cả đã đánh dấu thuộc, vẫn cho phép ôn lại toàn bộ
+        // Bậc 4: chưa học từ nào -> trả về rỗng, để UI tự quyết định thông báo + hành động.
+        val learned = allProgress.filter { it.lastReviewedAt != null }
+        if (learned.isEmpty()) return emptyList()
 
-        val scored = candidates.map { progress -> progress to priorityScore(progress, nowMillis) }
-        return scored
-            .sortedByDescending { it.second }
-            .take(limit)
-            .map { it.first }
-    }
+        val candidates = learned.filter { !it.isKnown }.ifEmpty { learned }
 
-    private fun priorityScore(progress: WordProgressEntity, nowMillis: Long): Int {
-        var score = 0
+        val result = LinkedHashMap<String, WordProgressEntity>()
 
-        // Chưa học lần nào -> ưu tiên thấp hơn từ đã sai (những từ này thuộc phạm vi bài học mới, không phải ôn tập)
-        if (progress.lastReviewedAt == null) return -1000
+        // Bậc 1: đã đến hạn ôn, quá hạn lâu nhất trước; đồng hạng thì sai nhiều hơn / mastery thấp hơn trước.
+        val due = candidates
+            .filter { it.nextReviewAt != null && it.nextReviewAt <= nowMillis }
+            .sortedWith(
+                compareByDescending<WordProgressEntity> { nowMillis - (it.nextReviewAt ?: nowMillis) }
+                    .thenByDescending { it.timesWrong }
+                    .thenBy { it.masteryLevel }
+            )
+        addUpToLimit(result, due, limit)
 
-        // Từ sai nhiều lần được ưu tiên rất cao
-        score += progress.timesWrong * 15
-
-        // Từ đã đến hạn ôn (hoặc quá hạn) được cộng điểm ưu tiên, càng quá hạn lâu càng ưu tiên
-        val nextReview = progress.nextReviewAt
-        if (nextReview != null) {
-            if (nextReview <= nowMillis) {
-                val overdueDays = ((nowMillis - nextReview) / (24 * 60 * 60 * 1000L)).coerceAtLeast(0)
-                score += 20 + overdueDays.toInt().coerceAtMost(30)
-            } else {
-                score -= 10 // chưa đến hạn, giảm ưu tiên
-            }
+        // Bậc 2: nếu vẫn thiếu, bổ sung theo số lần sai cao nhất.
+        if (result.size < limit) {
+            val byWrongCount = candidates
+                .filter { it.timesWrong > 0 }
+                .sortedByDescending { it.timesWrong }
+            addUpToLimit(result, byWrongCount, limit)
         }
 
-        // Mức thành thạo càng thấp càng ưu tiên; càng cao càng ít ưu tiên
-        score += (MasteryUpdater.MAX_MASTERY - progress.masteryLevel) * 5
+        // Bậc 3: nếu vẫn thiếu, bổ sung theo mastery thấp nhất.
+        if (result.size < limit) {
+            val byLowMastery = candidates.sortedBy { it.masteryLevel }
+            addUpToLimit(result, byLowMastery, limit)
+        }
 
-        return score
+        return result.values.toList()
+    }
+
+    private fun addUpToLimit(
+        result: LinkedHashMap<String, WordProgressEntity>,
+        source: List<WordProgressEntity>,
+        limit: Int
+    ) {
+        for (item in source) {
+            if (result.size >= limit) return
+            result.putIfAbsent(item.wordId, item)
+        }
     }
 }

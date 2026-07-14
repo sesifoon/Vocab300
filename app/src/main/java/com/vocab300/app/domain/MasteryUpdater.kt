@@ -23,6 +23,19 @@ object MasteryUpdater {
         }
     }
 
+    /**
+     * Phiên bản mới hỗ trợ 3 trạng thái (v1.1.0). NEARLY_CORRECT không phạt và không tăng mastery
+     * (nhẹ hơn hẳn so với CORRECT), theo đúng yêu cầu "cập nhật mastery nhẹ hơn đáp án đúng hoàn toàn".
+     */
+    fun nextMasteryLevel(currentMastery: Int, result: AnswerResult): Int {
+        val clampedCurrent = currentMastery.coerceIn(MIN_MASTERY, MAX_MASTERY)
+        return when (result) {
+            AnswerResult.CORRECT -> (clampedCurrent + 1).coerceAtMost(MAX_MASTERY)
+            AnswerResult.NEARLY_CORRECT -> clampedCurrent
+            AnswerResult.INCORRECT -> (clampedCurrent - 2).coerceAtLeast(MIN_MASTERY)
+        }
+    }
+
     fun nextReviewTimestamp(newMasteryLevel: Int, nowMillis: Long): Long {
         val level = newMasteryLevel.coerceIn(MIN_MASTERY, MAX_MASTERY)
         val days = REVIEW_INTERVAL_DAYS[level]

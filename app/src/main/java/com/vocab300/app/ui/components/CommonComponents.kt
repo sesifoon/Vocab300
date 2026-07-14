@@ -63,7 +63,7 @@ fun ConfirmDialog(
 }
 
 @Composable
-fun LessonTopProgressBar(progress: Float, hearts: Int, modifier: Modifier = Modifier) {
+fun LessonTopProgressBar(progress: Float, questionLabel: String, modifier: Modifier = Modifier) {
     Row(
         modifier = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -73,6 +73,6 @@ fun LessonTopProgressBar(progress: Float, hearts: Int, modifier: Modifier = Modi
             progress = { progress.coerceIn(0f, 1f) },
             modifier = Modifier.weight(1f).height(10.dp)
         )
-        Text("❤️ x$hearts", style = MaterialTheme.typography.labelLarge)
+        Text(questionLabel, style = MaterialTheme.typography.labelLarge)
     }
 }

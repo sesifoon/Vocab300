@@ -97,3 +97,41 @@ API kể từ lúc viết báo cáo này).
 - Workflow CI đã viết xong, hợp lệ về cú pháp, nhưng **chưa được một lần chạy CI thật nào xác
   nhận**.
 - Bộ dữ liệu 300 từ (200 EN + 100 KO) không bị thay đổi.
+
+---
+
+## 6. Cập nhật v1.1.0 (bản ghi mới nhất)
+
+**Bối cảnh:** sau báo cáo ở mục 1-5, người dùng đã tự push code lên GitHub thật và xác nhận
+`assembleDebug` + `testDebugUnitTest` chạy xanh, chỉ `lintDebug` đỏ với lỗi
+`FlowOperatorInvokedInComposition` tại `MainActivity.kt:26`. Lỗi đó đã được sửa (bọc `remember`)
+và người dùng xác nhận **APK đã cài và chạy OK trên điện thoại thật**.
+
+Từ trạng thái đã build-thành-công đó, v1.1.0 thực hiện một loạt thay đổi nghiệp vụ lớn (bỏ tim,
+chấm điểm 3 trạng thái, phân loại mục từ, chọn dạng bài thông minh, hỗ trợ >300 từ, responsive).
+**Sandbox hiện tại vẫn không có Gradle/Android SDK/mạng** (đã kiểm tra lại, xem mục 1) — vì vậy
+toàn bộ thay đổi v1.1.0 dưới đây **chỉ được rà soát tĩnh thủ công**, chưa có một lần
+`assembleDebug`/`testDebugUnitTest`/`lintDebug` thật nào xác nhận lại sau đợt sửa lớn này.
+
+**Rủi ro compile đã được rà soát cho v1.1.0:**
+- Cân bằng ngoặc `{}`/`()` trên toàn bộ 73 file `.kt` (bao gồm file mới) — OK.
+- Import cho các API mới dùng (FlowRow, verticalScroll, imePadding, Icons...) — không thiếu import nào.
+- Package declaration khớp thư mục cho toàn bộ file mới — OK.
+- Không có định nghĩa trùng lặp class/object.
+- Chữ ký hàm thay đổi (`recordAnswer`, `submitAnswer`, `QuestionGenerator.generate`) đều giữ tham
+  số cũ dạng deprecated hoặc default value để không phá vỡ lời gọi hiện có.
+
+**Rủi ro CHƯA thể loại trừ hoàn toàn (chỉ trình biên dịch thật mới xác nhận được):**
+- `android.applicationVariants.all { outputs.all { ... BaseVariantOutputImpl ... } }` trong
+  `app/build.gradle.kts` dùng API nội bộ của AGP để đổi tên file APK — đây là cách làm phổ biến,
+  nhiều năm vẫn hoạt động qua các bản AGP, nhưng có thể phát sinh cảnh báo deprecated hoặc lỗi tuỳ
+  phiên bản AGP cụ thể (đang dùng AGP 8.5.2). Nếu build lỗi ở bước này, đây là nghi phạm đầu tiên.
+- Room `MIGRATION_1_2` (thêm 8 cột cho `vocabulary_words`) chưa được Room thật chạy thử qua migration
+  test — cú pháp SQL đã kiểm tra thủ công (ALTER TABLE ADD COLUMN, kiểu dữ liệu khớp Kotlin type),
+  nhưng chưa có bằng chứng chạy thật.
+- KSP/Room compiler chưa thực sự sinh mã cho `VocabularyWordEntity` với 8 field mới.
+
+**Việc bạn cần làm:** push nhánh chứa các thay đổi v1.1.0 này lên GitHub thật (qua Termux/web editor
+như đã làm ở bản trước), để workflow `.github/workflows/build-apk.yml` (đã đổi tên artifact/APK
+thành `OQC_Vocab300_v1.1.0`) chạy thật. Gửi lại log nếu có bước đỏ.
+

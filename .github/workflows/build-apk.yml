@@ -1,4 +1,4 @@
-name: Build Vocab300 APK
+name: Build OQC Vocab300 v1.1.0 APK
 
 on:
   workflow_dispatch:
@@ -60,15 +60,15 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: Vocab300-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: OQC_Vocab300_v1.1.0
+          path: app/build/outputs/apk/debug/OQC_Vocab300_v1.1.0.apk
           if-no-files-found: error
 
       - name: Upload test and lint reports
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: Vocab300-test-lint-reports
+          name: OQC_Vocab300_v1.1.0-test-lint-reports
           path: |
             app/build/reports/tests/testDebugUnitTest/**
             app/build/test-results/testDebugUnitTest/**

@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Card
@@ -24,9 +26,21 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vocab300.app.VocabApp
 
+/** Nhãn mô tả cho từng mức mastery 0-5 (chỉ đổi nhãn hiển thị, KHÔNG đổi thuật toán mastery). */
+private val MASTERY_LABELS = mapOf(
+    0 to "Chưa học",
+    1 to "Mới làm quen",
+    2 to "Đang nhớ",
+    3 to "Khá nhớ",
+    4 to "Ghi nhớ tốt",
+    5 to "Thành thạo"
+)
+
 @Composable
 fun StatsScreen(app: VocabApp, onBack: () -> Unit) {
-    val viewModel: StatsViewModel = viewModel(factory = StatsViewModel.Factory(app.progressRepository))
+    val viewModel: StatsViewModel = viewModel(
+        factory = StatsViewModel.Factory(app.progressRepository, app.vocabularyRepository)
+    )
     val state by viewModel.state.collectAsState()
 
     Scaffold(
@@ -42,23 +56,20 @@ fun StatsScreen(app: VocabApp, onBack: () -> Unit) {
         }
     ) { padding ->
         Column(
-            modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Card(modifier = Modifier.fillMaxWidth()) {
                 Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        Text("Tổng XP"); Text("${state.userStats?.totalXp ?: 0}")
-                    }
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        Text("Chuỗi ngày học"); Text("🔥 ${state.userStats?.streakDays ?: 0}")
-                    }
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        Text("Từ đã học"); Text("${state.wordsLearned}/300")
-                    }
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                        Text("Bài đã hoàn thành"); Text("${state.lessonsCompleted}")
-                    }
+                    StatRow("Tổng XP", "${state.userStats?.totalXp ?: 0}")
+                    StatRow("Chuỗi ngày học", "🔥 ${state.userStats?.streakDays ?: 0}")
+                    // v1.1.0: tổng số từ lấy động từ DB (vocabularyRepository.totalCount()), không hard-code 300.
+                    StatRow("Từ đã học", "${state.wordsLearned}/${state.totalWords}")
+                    StatRow("Bài đã hoàn thành", "${state.lessonsCompleted}")
                 }
             }
 
@@ -70,7 +81,10 @@ fun StatsScreen(app: VocabApp, onBack: () -> Unit) {
                         val total = state.masteryBreakdown.values.sum().coerceAtLeast(1)
                         Column {
                             Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                                Text("Mức $level")
+                                Text(
+                                    "Mức $level — ${MASTERY_LABELS[level]}",
+                                    modifier = Modifier.weight(1f, fill = false)
+                                )
                                 Text("$count từ")
                             }
                             LinearProgressIndicator(
@@ -82,5 +96,16 @@ fun StatsScreen(app: VocabApp, onBack: () -> Unit) {
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun StatRow(label: String, value: String) {
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Text(label, modifier = Modifier.weight(1f, fill = false))
+        Text(value, style = MaterialTheme.typography.titleMedium)
     }
 }

@@ -6,15 +6,17 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.VolumeUp
@@ -87,16 +89,7 @@ fun LessonScreen(
         )
     }
 
-    if (state.outOfHearts) {
-        ConfirmDialog(
-            title = "Bạn đã hết tim",
-            message = "Hãy quay lại vào ngày mai hoặc ôn tập để lấy lại tim.",
-            confirmText = "Về trang chủ",
-            cancelText = "Đóng",
-            onConfirm = onExit,
-            onDismiss = onExit
-        )
-    }
+    // v1.1.0: đã bỏ hoàn toàn hộp thoại "hết tim" — người dùng luôn được phép tiếp tục.
 
     Scaffold(
         topBar = {
@@ -106,7 +99,7 @@ fun LessonScreen(
                 }
                 LessonTopProgressBar(
                     progress = if (state.totalQuestions == 0) 0f else state.questionNumber.toFloat() / state.totalQuestions,
-                    hearts = state.hearts,
+                    questionLabel = "${state.questionNumber.coerceAtMost(state.totalQuestions)}/${state.totalQuestions}",
                     modifier = Modifier.weight(1f)
                 )
             }
@@ -129,7 +122,11 @@ private fun QuestionContent(state: LessonUiState, viewModel: LessonViewModel, mo
     val question = state.question ?: return
 
     Column(
-        modifier = modifier.fillMaxSize().padding(20.dp),
+        modifier = modifier
+            .fillMaxSize()
+            .imePadding()
+            .verticalScroll(rememberScrollState())
+            .padding(20.dp),
         verticalArrangement = Arrangement.Top
     ) {
         Text(
@@ -156,7 +153,7 @@ private fun QuestionContent(state: LessonUiState, viewModel: LessonViewModel, mo
             QuestionType.MATCHING -> MatchingBody(state, viewModel)
         }
 
-        Spacer(modifier = Modifier.weight(1f))
+        Spacer(modifier = Modifier.height(24.dp))
 
         FeedbackBar(state, viewModel)
     }
@@ -176,7 +173,7 @@ private fun ChoiceQuestionBody(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(prompt, style = MaterialTheme.typography.headlineMedium)
+            Text(prompt, style = MaterialTheme.typography.headlineMedium, modifier = Modifier.weight(1f))
             if (showSpeaker) {
                 IconButton(onClick = { viewModel.playTts() }) {
                     Icon(Icons.Filled.VolumeUp, contentDescription = "Nghe phát âm")
@@ -204,14 +201,12 @@ private fun ChoiceQuestionBody(
     options.forEach { option ->
         val isAnswered = state.feedback != AnswerFeedback.None
         val isCorrectOption = isAnswered && option == correctAnswerOf(state)
-        val isThisWrongPicked = isAnswered && state.feedback is AnswerFeedback.Incorrect &&
-            option != correctAnswerOf(state)
 
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 6.dp)
-                .clickable(enabled = !isAnswered) { viewModel.submitChoiceOrTypedAnswer(option) },
+                .clickable(enabled = !isAnswered) { viewModel.submitChoiceAnswer(option) },
             colors = CardDefaults.cardColors(
                 containerColor = when {
                     isCorrectOption -> MaterialTheme.colorScheme.tertiaryContainer
@@ -246,7 +241,7 @@ private fun TypeAnswerBody(state: LessonUiState, viewModel: LessonViewModel) {
     )
     Spacer(modifier = Modifier.height(16.dp))
     Button(
-        onClick = { viewModel.submitChoiceOrTypedAnswer(text) },
+        onClick = { viewModel.submitTypedAnswer(text) },
         enabled = !isAnswered && text.isNotBlank(),
         modifier = Modifier.fillMaxWidth()
     ) {
@@ -315,23 +310,50 @@ private fun MatchingBody(state: LessonUiState, viewModel: LessonViewModel) {
 private fun FeedbackBar(state: LessonUiState, viewModel: LessonViewModel) {
     val feedback = state.feedback
     AnimatedVisibility(visible = feedback != AnswerFeedback.None, enter = fadeIn(), exit = fadeOut()) {
-        val isCorrect = feedback is AnswerFeedback.Correct
+        val containerColor = when (feedback) {
+            is AnswerFeedback.Correct -> MaterialTheme.colorScheme.tertiaryContainer
+            is AnswerFeedback.NearlyCorrect -> MaterialTheme.colorScheme.secondaryContainer
+            is AnswerFeedback.Incorrect -> MaterialTheme.colorScheme.errorContainer
+            AnswerFeedback.None -> MaterialTheme.colorScheme.surfaceVariant
+        }
+        val title = when (feedback) {
+            is AnswerFeedback.Correct -> "Chính xác! 🎉"
+            is AnswerFeedback.NearlyCorrect -> "Gần đúng 👍"
+            is AnswerFeedback.Incorrect -> "Chưa đúng"
+            AnswerFeedback.None -> ""
+        }
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp))
-                .background(
-                    if (isCorrect) MaterialTheme.colorScheme.tertiaryContainer
-                    else MaterialTheme.colorScheme.errorContainer
-                )
+                .background(containerColor)
                 .padding(20.dp)
         ) {
-            Text(
-                if (isCorrect) "Chính xác! 🎉" else "Chưa đúng",
-                style = MaterialTheme.typography.titleMedium
-            )
-            if (feedback is AnswerFeedback.Incorrect && feedback.correctAnswer.isNotBlank()) {
-                Text("Đáp án đúng là: ${feedback.correctAnswer}", style = MaterialTheme.typography.bodyMedium)
+            Text(title, style = MaterialTheme.typography.titleMedium)
+            when (feedback) {
+                is AnswerFeedback.NearlyCorrect -> {
+                    if (feedback.correctAnswer.isNotBlank()) {
+                        Text("Đáp án chuẩn: ${feedback.correctAnswer}", style = MaterialTheme.typography.bodyMedium)
+                    }
+                }
+                is AnswerFeedback.Incorrect -> {
+                    if (feedback.userAnswer.isNotBlank()) {
+                        Text("Bạn đã nhập: ${feedback.userAnswer}", style = MaterialTheme.typography.bodyMedium)
+                    }
+                    if (feedback.correctAnswer.isNotBlank()) {
+                        Text("Đáp án đúng: ${feedback.correctAnswer}", style = MaterialTheme.typography.bodyMedium)
+                    }
+                    if (state.question?.ttsText != null && state.ttsAvailable) {
+                        OutlinedButton(
+                            onClick = { viewModel.playTts() },
+                            modifier = Modifier.padding(top = 8.dp)
+                        ) {
+                            Icon(Icons.Filled.VolumeUp, contentDescription = null, modifier = Modifier.padding(end = 6.dp))
+                            Text("Nghe lại")
+                        }
+                    }
+                }
+                else -> Unit
             }
             Spacer(modifier = Modifier.height(12.dp))
             Button(onClick = { viewModel.continueToNext() }, modifier = Modifier.fillMaxWidth()) {

@@ -12,8 +12,8 @@ android {
         applicationId = "com.vocab300.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,7 +35,8 @@ android {
     kotlinOptions {
         jvmTarget = "17"
         freeCompilerArgs += listOf(
-            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+            "-opt-in=androidx.compose.foundation.layout.ExperimentalLayoutApi"
         )
     }
 
@@ -86,4 +87,15 @@ dependencies {
     androidTestImplementation(platform("androidx.compose:compose-bom:2024.06.00"))
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+}
+
+// v1.1.0: đổi tên file APK đầu ra thành OQC_Vocab300_v<versionName>.apk (yêu cầu đặt tên chuyên
+// nghiệp cho artifact CI). Dùng API applicationVariants kinh điển vì tương thích rộng qua nhiều
+// phiên bản AGP; chưa thể xác minh bằng build thật trong sandbox này (xem BUILD_REPORT.md).
+android.applicationVariants.all {
+    val variant = this
+    outputs.all {
+        val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+        output.outputFileName = "OQC_Vocab300_v${variant.versionName}.apk"
+    }
 }

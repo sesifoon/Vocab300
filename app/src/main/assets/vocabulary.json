@@ -8,7 +8,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 1
+    "sequenceOrder": 1,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN002",
@@ -19,7 +27,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 2
+    "sequenceOrder": 2,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN003",
@@ -30,7 +46,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 3
+    "sequenceOrder": 3,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN004",
@@ -41,7 +65,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 4
+    "sequenceOrder": 4,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN005",
@@ -52,7 +84,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 5
+    "sequenceOrder": 5,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN006",
@@ -63,7 +103,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 6
+    "sequenceOrder": 6,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN007",
@@ -74,7 +122,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 7
+    "sequenceOrder": 7,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN008",
@@ -85,7 +141,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 8
+    "sequenceOrder": 8,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN009",
@@ -96,7 +160,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 9
+    "sequenceOrder": 9,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN010",
@@ -107,7 +179,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 10
+    "sequenceOrder": 10,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN011",
@@ -118,7 +198,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 11
+    "sequenceOrder": 11,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN012",
@@ -129,7 +217,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 12
+    "sequenceOrder": 12,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN013",
@@ -140,7 +236,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 13
+    "sequenceOrder": 13,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN014",
@@ -151,7 +255,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 14
+    "sequenceOrder": 14,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN015",
@@ -162,7 +274,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 15
+    "sequenceOrder": 15,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN016",
@@ -173,7 +293,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 16
+    "sequenceOrder": 16,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN017",
@@ -184,7 +312,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 17
+    "sequenceOrder": 17,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN018",
@@ -195,7 +331,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 18
+    "sequenceOrder": 18,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN019",
@@ -206,7 +350,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 19
+    "sequenceOrder": 19,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN020",
@@ -217,7 +369,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 20
+    "sequenceOrder": 20,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN021",
@@ -228,7 +388,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 21
+    "sequenceOrder": 21,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN022",
@@ -239,7 +407,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 22
+    "sequenceOrder": 22,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN023",
@@ -250,7 +426,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 23
+    "sequenceOrder": 23,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN024",
@@ -261,7 +445,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 24
+    "sequenceOrder": 24,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN025",
@@ -272,7 +464,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 25
+    "sequenceOrder": 25,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN026",
@@ -283,7 +483,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 26
+    "sequenceOrder": 26,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN027",
@@ -294,7 +502,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 27
+    "sequenceOrder": 27,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN028",
@@ -305,7 +521,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 28
+    "sequenceOrder": 28,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN029",
@@ -316,7 +540,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 29
+    "sequenceOrder": 29,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN030",
@@ -327,7 +559,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 30
+    "sequenceOrder": 30,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN031",
@@ -338,7 +578,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 31
+    "sequenceOrder": 31,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN032",
@@ -349,7 +597,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 32
+    "sequenceOrder": 32,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN033",
@@ -360,7 +616,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 33
+    "sequenceOrder": 33,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN034",
@@ -371,7 +635,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 34
+    "sequenceOrder": 34,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN035",
@@ -382,7 +654,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 35
+    "sequenceOrder": 35,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN036",
@@ -393,7 +673,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 36
+    "sequenceOrder": 36,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN037",
@@ -404,7 +692,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 37
+    "sequenceOrder": 37,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN038",
@@ -415,7 +711,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 38
+    "sequenceOrder": 38,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN039",
@@ -426,7 +730,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 39
+    "sequenceOrder": 39,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN040",
@@ -437,7 +749,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 40
+    "sequenceOrder": 40,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN041",
@@ -448,7 +768,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 41
+    "sequenceOrder": 41,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN042",
@@ -459,7 +787,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 42
+    "sequenceOrder": 42,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN043",
@@ -470,7 +806,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 43
+    "sequenceOrder": 43,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN044",
@@ -481,7 +825,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 44
+    "sequenceOrder": 44,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN045",
@@ -492,7 +844,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 45
+    "sequenceOrder": 45,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN046",
@@ -503,7 +863,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 46
+    "sequenceOrder": 46,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN047",
@@ -514,7 +882,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 47
+    "sequenceOrder": 47,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN048",
@@ -525,7 +901,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 48
+    "sequenceOrder": 48,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN049",
@@ -536,7 +920,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 49
+    "sequenceOrder": 49,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN050",
@@ -547,7 +939,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 50
+    "sequenceOrder": 50,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN051",
@@ -558,7 +958,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 51
+    "sequenceOrder": 51,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN052",
@@ -569,7 +977,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 52
+    "sequenceOrder": 52,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN053",
@@ -580,7 +996,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 53
+    "sequenceOrder": 53,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN054",
@@ -591,7 +1015,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 54
+    "sequenceOrder": 54,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN055",
@@ -602,7 +1034,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 55
+    "sequenceOrder": 55,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN056",
@@ -613,7 +1053,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 56
+    "sequenceOrder": 56,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN057",
@@ -624,7 +1072,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 57
+    "sequenceOrder": 57,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN058",
@@ -635,7 +1091,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 58
+    "sequenceOrder": 58,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN059",
@@ -646,7 +1110,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 59
+    "sequenceOrder": 59,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN060",
@@ -657,7 +1129,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 60
+    "sequenceOrder": 60,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN061",
@@ -668,7 +1148,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 61
+    "sequenceOrder": 61,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN062",
@@ -679,7 +1167,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 62
+    "sequenceOrder": 62,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN063",
@@ -690,7 +1186,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 63
+    "sequenceOrder": 63,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN064",
@@ -701,7 +1205,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 64
+    "sequenceOrder": 64,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN065",
@@ -712,7 +1224,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 65
+    "sequenceOrder": 65,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN066",
@@ -723,7 +1243,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 66
+    "sequenceOrder": 66,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN067",
@@ -734,7 +1262,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 67
+    "sequenceOrder": 67,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN068",
@@ -745,7 +1281,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 68
+    "sequenceOrder": 68,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN069",
@@ -756,7 +1300,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 69
+    "sequenceOrder": 69,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN070",
@@ -767,7 +1319,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 70
+    "sequenceOrder": 70,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN071",
@@ -778,7 +1338,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 71
+    "sequenceOrder": 71,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN072",
@@ -789,7 +1357,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 72
+    "sequenceOrder": 72,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN073",
@@ -800,7 +1376,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 73
+    "sequenceOrder": 73,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN074",
@@ -811,7 +1395,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 74
+    "sequenceOrder": 74,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN075",
@@ -822,7 +1414,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 75
+    "sequenceOrder": 75,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN076",
@@ -833,7 +1433,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 76
+    "sequenceOrder": 76,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN077",
@@ -844,7 +1452,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 77
+    "sequenceOrder": 77,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN078",
@@ -855,7 +1471,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 78
+    "sequenceOrder": 78,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN079",
@@ -866,7 +1490,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 79
+    "sequenceOrder": 79,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN080",
@@ -877,7 +1509,15 @@
     "example": null,
     "category": "Các tháng trong năm",
     "imageKey": null,
-    "sequenceOrder": 80
+    "sequenceOrder": 80,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN081",
@@ -888,7 +1528,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 81
+    "sequenceOrder": 81,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN082",
@@ -899,7 +1547,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 82
+    "sequenceOrder": 82,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN083",
@@ -910,7 +1566,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 83
+    "sequenceOrder": 83,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN084",
@@ -921,7 +1585,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 84
+    "sequenceOrder": 84,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN085",
@@ -932,7 +1604,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 85
+    "sequenceOrder": 85,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN086",
@@ -943,7 +1623,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 86
+    "sequenceOrder": 86,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN087",
@@ -954,7 +1642,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 87
+    "sequenceOrder": 87,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN088",
@@ -965,7 +1661,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 88
+    "sequenceOrder": 88,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN089",
@@ -976,7 +1680,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 89
+    "sequenceOrder": 89,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN090",
@@ -987,7 +1699,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 90
+    "sequenceOrder": 90,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN091",
@@ -998,7 +1718,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 91
+    "sequenceOrder": 91,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN092",
@@ -1009,7 +1737,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 92
+    "sequenceOrder": 92,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN093",
@@ -1020,7 +1756,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 93
+    "sequenceOrder": 93,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN094",
@@ -1031,7 +1775,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 94
+    "sequenceOrder": 94,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN095",
@@ -1042,7 +1794,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 95
+    "sequenceOrder": 95,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN096",
@@ -1053,7 +1813,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 96
+    "sequenceOrder": 96,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN097",
@@ -1064,7 +1832,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 97
+    "sequenceOrder": 97,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN098",
@@ -1075,7 +1851,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 98
+    "sequenceOrder": 98,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN099",
@@ -1086,7 +1870,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 99
+    "sequenceOrder": 99,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN100",
@@ -1097,7 +1889,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 100
+    "sequenceOrder": 100,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN101",
@@ -1108,7 +1908,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 101
+    "sequenceOrder": 101,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN102",
@@ -1119,7 +1927,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 102
+    "sequenceOrder": 102,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN103",
@@ -1130,7 +1946,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 103
+    "sequenceOrder": 103,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN104",
@@ -1141,7 +1965,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 104
+    "sequenceOrder": 104,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN105",
@@ -1152,7 +1984,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 105
+    "sequenceOrder": 105,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN106",
@@ -1163,7 +2003,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 106
+    "sequenceOrder": 106,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN107",
@@ -1174,7 +2022,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 107
+    "sequenceOrder": 107,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN108",
@@ -1185,7 +2041,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 108
+    "sequenceOrder": 108,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN109",
@@ -1196,7 +2060,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 109
+    "sequenceOrder": 109,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN110",
@@ -1207,7 +2079,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 110
+    "sequenceOrder": 110,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN111",
@@ -1218,7 +2098,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 111
+    "sequenceOrder": 111,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN112",
@@ -1229,7 +2117,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 112
+    "sequenceOrder": 112,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN113",
@@ -1240,7 +2136,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 113
+    "sequenceOrder": 113,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN114",
@@ -1251,7 +2155,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 114
+    "sequenceOrder": 114,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN115",
@@ -1262,7 +2174,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 115
+    "sequenceOrder": 115,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN116",
@@ -1273,7 +2193,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 116
+    "sequenceOrder": 116,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN117",
@@ -1284,7 +2212,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 117
+    "sequenceOrder": 117,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN118",
@@ -1295,7 +2231,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 118
+    "sequenceOrder": 118,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN119",
@@ -1306,7 +2250,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 119
+    "sequenceOrder": 119,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN120",
@@ -1317,7 +2269,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 120
+    "sequenceOrder": 120,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN121",
@@ -1328,7 +2288,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 121
+    "sequenceOrder": 121,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN122",
@@ -1339,7 +2307,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 122
+    "sequenceOrder": 122,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN123",
@@ -1350,7 +2326,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 123
+    "sequenceOrder": 123,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN124",
@@ -1361,7 +2345,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 124
+    "sequenceOrder": 124,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN125",
@@ -1372,7 +2364,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 125
+    "sequenceOrder": 125,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN126",
@@ -1383,7 +2383,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 126
+    "sequenceOrder": 126,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN127",
@@ -1394,7 +2402,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 127
+    "sequenceOrder": 127,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN128",
@@ -1405,7 +2421,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 128
+    "sequenceOrder": 128,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN129",
@@ -1416,7 +2440,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 129
+    "sequenceOrder": 129,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN130",
@@ -1427,7 +2459,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 130
+    "sequenceOrder": 130,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN131",
@@ -1438,7 +2478,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 131
+    "sequenceOrder": 131,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN132",
@@ -1449,7 +2497,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 132
+    "sequenceOrder": 132,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN133",
@@ -1460,7 +2516,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 133
+    "sequenceOrder": 133,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN134",
@@ -1471,7 +2535,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 134
+    "sequenceOrder": 134,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN135",
@@ -1482,7 +2554,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 135
+    "sequenceOrder": 135,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN136",
@@ -1493,7 +2573,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 136
+    "sequenceOrder": 136,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN137",
@@ -1504,7 +2592,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 137
+    "sequenceOrder": 137,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN138",
@@ -1515,7 +2611,15 @@
     "example": null,
     "category": "Danh từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 138
+    "sequenceOrder": 138,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN139",
@@ -1526,7 +2630,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 139
+    "sequenceOrder": 139,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN140",
@@ -1537,7 +2649,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 140
+    "sequenceOrder": 140,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN141",
@@ -1548,7 +2668,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 141
+    "sequenceOrder": 141,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN142",
@@ -1559,7 +2687,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 142
+    "sequenceOrder": 142,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN143",
@@ -1570,7 +2706,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 143
+    "sequenceOrder": 143,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN144",
@@ -1581,7 +2725,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 144
+    "sequenceOrder": 144,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN145",
@@ -1592,7 +2744,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 145
+    "sequenceOrder": 145,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN146",
@@ -1603,7 +2763,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 146
+    "sequenceOrder": 146,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN147",
@@ -1614,7 +2782,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 147
+    "sequenceOrder": 147,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN148",
@@ -1625,7 +2801,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 148
+    "sequenceOrder": 148,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN149",
@@ -1636,7 +2820,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 149
+    "sequenceOrder": 149,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN150",
@@ -1647,7 +2839,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 150
+    "sequenceOrder": 150,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN151",
@@ -1658,7 +2858,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 151
+    "sequenceOrder": 151,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN152",
@@ -1669,7 +2877,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 152
+    "sequenceOrder": 152,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN153",
@@ -1680,7 +2896,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 153
+    "sequenceOrder": 153,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN154",
@@ -1691,7 +2915,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 154
+    "sequenceOrder": 154,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN155",
@@ -1702,7 +2934,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 155
+    "sequenceOrder": 155,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN156",
@@ -1713,7 +2953,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 156
+    "sequenceOrder": 156,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN157",
@@ -1724,7 +2972,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 157
+    "sequenceOrder": 157,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN158",
@@ -1735,7 +2991,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 158
+    "sequenceOrder": 158,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN159",
@@ -1746,7 +3010,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 159
+    "sequenceOrder": 159,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN160",
@@ -1757,7 +3029,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 160
+    "sequenceOrder": 160,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN161",
@@ -1768,7 +3048,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 161
+    "sequenceOrder": 161,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN162",
@@ -1779,7 +3067,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 162
+    "sequenceOrder": 162,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN163",
@@ -1790,7 +3086,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 163
+    "sequenceOrder": 163,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN164",
@@ -1801,7 +3105,15 @@
     "example": null,
     "category": "Tính từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 164
+    "sequenceOrder": 164,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN165",
@@ -1812,7 +3124,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 165
+    "sequenceOrder": 165,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN166",
@@ -1823,7 +3143,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 166
+    "sequenceOrder": 166,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN167",
@@ -1834,7 +3162,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 167
+    "sequenceOrder": 167,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN168",
@@ -1845,7 +3181,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 168
+    "sequenceOrder": 168,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN169",
@@ -1856,7 +3200,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 169
+    "sequenceOrder": 169,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN170",
@@ -1867,7 +3219,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 170
+    "sequenceOrder": 170,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN171",
@@ -1878,7 +3238,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 171
+    "sequenceOrder": 171,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN172",
@@ -1889,7 +3257,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 172
+    "sequenceOrder": 172,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN173",
@@ -1900,7 +3276,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 173
+    "sequenceOrder": 173,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN174",
@@ -1911,7 +3295,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 174
+    "sequenceOrder": 174,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN175",
@@ -1922,7 +3314,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 175
+    "sequenceOrder": 175,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN176",
@@ -1933,7 +3333,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 176
+    "sequenceOrder": 176,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN177",
@@ -1944,7 +3352,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 177
+    "sequenceOrder": 177,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN178",
@@ -1955,7 +3371,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 178
+    "sequenceOrder": 178,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN179",
@@ -1966,7 +3390,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 179
+    "sequenceOrder": 179,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN180",
@@ -1977,7 +3409,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 180
+    "sequenceOrder": 180,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN181",
@@ -1988,7 +3428,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 181
+    "sequenceOrder": 181,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN182",
@@ -1999,7 +3447,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 182
+    "sequenceOrder": 182,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN183",
@@ -2010,7 +3466,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 183
+    "sequenceOrder": 183,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN184",
@@ -2021,7 +3485,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 184
+    "sequenceOrder": 184,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN185",
@@ -2032,7 +3504,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 185
+    "sequenceOrder": 185,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN186",
@@ -2043,7 +3523,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 186
+    "sequenceOrder": 186,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN187",
@@ -2054,7 +3542,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 187
+    "sequenceOrder": 187,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN188",
@@ -2065,7 +3561,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 188
+    "sequenceOrder": 188,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN189",
@@ -2076,7 +3580,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 189
+    "sequenceOrder": 189,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN190",
@@ -2087,7 +3599,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 190
+    "sequenceOrder": 190,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN191",
@@ -2098,7 +3618,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 191
+    "sequenceOrder": 191,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN192",
@@ -2109,7 +3637,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 192
+    "sequenceOrder": 192,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN193",
@@ -2120,7 +3656,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 193
+    "sequenceOrder": 193,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN194",
@@ -2131,7 +3675,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 194
+    "sequenceOrder": 194,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN195",
@@ -2142,7 +3694,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 195
+    "sequenceOrder": 195,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN196",
@@ -2153,7 +3713,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 196
+    "sequenceOrder": 196,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN197",
@@ -2164,7 +3732,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 197
+    "sequenceOrder": 197,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN198",
@@ -2175,7 +3751,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 198
+    "sequenceOrder": 198,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN199",
@@ -2186,7 +3770,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 199
+    "sequenceOrder": 199,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "EN200",
@@ -2197,7 +3789,15 @@
     "example": null,
     "category": "Tên hạng mục kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 200
+    "sequenceOrder": 200,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO001",
@@ -2208,7 +3808,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 1
+    "sequenceOrder": 1,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO002",
@@ -2219,7 +3827,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 2
+    "sequenceOrder": 2,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO003",
@@ -2230,7 +3846,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 3
+    "sequenceOrder": 3,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO004",
@@ -2241,7 +3865,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 4
+    "sequenceOrder": 4,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO005",
@@ -2252,7 +3884,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 5
+    "sequenceOrder": 5,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO006",
@@ -2263,7 +3903,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 6
+    "sequenceOrder": 6,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO007",
@@ -2274,7 +3922,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 7
+    "sequenceOrder": 7,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO008",
@@ -2285,7 +3941,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 8
+    "sequenceOrder": 8,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO009",
@@ -2296,7 +3960,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 9
+    "sequenceOrder": 9,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO010",
@@ -2307,7 +3979,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 10
+    "sequenceOrder": 10,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO011",
@@ -2318,7 +3998,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 11
+    "sequenceOrder": 11,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO012",
@@ -2329,7 +4017,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 12
+    "sequenceOrder": 12,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO013",
@@ -2340,7 +4036,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 13
+    "sequenceOrder": 13,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO014",
@@ -2351,7 +4055,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 14
+    "sequenceOrder": 14,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO015",
@@ -2362,7 +4074,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 15
+    "sequenceOrder": 15,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO016",
@@ -2373,7 +4093,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 16
+    "sequenceOrder": 16,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO017",
@@ -2384,7 +4112,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 17
+    "sequenceOrder": 17,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO018",
@@ -2395,7 +4131,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 18
+    "sequenceOrder": 18,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO019",
@@ -2406,7 +4150,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 19
+    "sequenceOrder": 19,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO020",
@@ -2417,7 +4169,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 20
+    "sequenceOrder": 20,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO021",
@@ -2428,7 +4188,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 21
+    "sequenceOrder": 21,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO022",
@@ -2439,7 +4207,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 22
+    "sequenceOrder": 22,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO023",
@@ -2450,7 +4226,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 23
+    "sequenceOrder": 23,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO024",
@@ -2461,7 +4245,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 24
+    "sequenceOrder": 24,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO025",
@@ -2472,7 +4264,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 25
+    "sequenceOrder": 25,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO026",
@@ -2483,7 +4283,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 26
+    "sequenceOrder": 26,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO027",
@@ -2494,7 +4302,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 27
+    "sequenceOrder": 27,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO028",
@@ -2505,7 +4321,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 28
+    "sequenceOrder": 28,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO029",
@@ -2516,7 +4340,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 29
+    "sequenceOrder": 29,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO030",
@@ -2527,7 +4359,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 30
+    "sequenceOrder": 30,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO031",
@@ -2538,7 +4378,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 31
+    "sequenceOrder": 31,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO032",
@@ -2549,7 +4397,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 32
+    "sequenceOrder": 32,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO033",
@@ -2560,7 +4416,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 33
+    "sequenceOrder": 33,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO034",
@@ -2571,7 +4435,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 34
+    "sequenceOrder": 34,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO035",
@@ -2582,7 +4454,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 35
+    "sequenceOrder": 35,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO036",
@@ -2593,7 +4473,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 36
+    "sequenceOrder": 36,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO037",
@@ -2604,7 +4492,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 37
+    "sequenceOrder": 37,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO038",
@@ -2615,7 +4511,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 38
+    "sequenceOrder": 38,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO039",
@@ -2626,7 +4530,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 39
+    "sequenceOrder": 39,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO040",
@@ -2637,7 +4549,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 40
+    "sequenceOrder": 40,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO041",
@@ -2648,7 +4568,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 41
+    "sequenceOrder": 41,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO042",
@@ -2659,7 +4587,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 42
+    "sequenceOrder": 42,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO043",
@@ -2670,7 +4606,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 43
+    "sequenceOrder": 43,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO044",
@@ -2681,7 +4625,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 44
+    "sequenceOrder": 44,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO045",
@@ -2692,7 +4644,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 45
+    "sequenceOrder": 45,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO046",
@@ -2703,7 +4663,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 46
+    "sequenceOrder": 46,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO047",
@@ -2714,7 +4682,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 47
+    "sequenceOrder": 47,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO048",
@@ -2725,7 +4701,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 48
+    "sequenceOrder": 48,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO049",
@@ -2736,7 +4720,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 49
+    "sequenceOrder": 49,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO050",
@@ -2747,7 +4739,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 50
+    "sequenceOrder": 50,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO051",
@@ -2758,7 +4758,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 51
+    "sequenceOrder": 51,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO052",
@@ -2769,7 +4777,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 52
+    "sequenceOrder": 52,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO053",
@@ -2780,7 +4796,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 53
+    "sequenceOrder": 53,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO054",
@@ -2791,7 +4815,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 54
+    "sequenceOrder": 54,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO055",
@@ -2802,7 +4834,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 55
+    "sequenceOrder": 55,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO056",
@@ -2813,7 +4853,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 56
+    "sequenceOrder": 56,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO057",
@@ -2824,7 +4872,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 57
+    "sequenceOrder": 57,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO058",
@@ -2835,7 +4891,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 58
+    "sequenceOrder": 58,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO059",
@@ -2846,7 +4910,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 59
+    "sequenceOrder": 59,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO060",
@@ -2857,7 +4929,15 @@
     "example": null,
     "category": "Tên lỗi",
     "imageKey": null,
-    "sequenceOrder": 60
+    "sequenceOrder": 60,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO061",
@@ -2868,7 +4948,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 61
+    "sequenceOrder": 61,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO062",
@@ -2879,7 +4967,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 62
+    "sequenceOrder": 62,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO063",
@@ -2890,7 +4986,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 63
+    "sequenceOrder": 63,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO064",
@@ -2901,7 +5005,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 64
+    "sequenceOrder": 64,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO065",
@@ -2912,7 +5024,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 65
+    "sequenceOrder": 65,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO066",
@@ -2923,7 +5043,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 66
+    "sequenceOrder": 66,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO067",
@@ -2934,7 +5062,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 67
+    "sequenceOrder": 67,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO068",
@@ -2945,7 +5081,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 68
+    "sequenceOrder": 68,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO069",
@@ -2956,7 +5100,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 69
+    "sequenceOrder": 69,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO070",
@@ -2967,7 +5119,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 70
+    "sequenceOrder": 70,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO071",
@@ -2978,7 +5138,15 @@
     "example": null,
     "category": "Các thứ trong tuần",
     "imageKey": null,
-    "sequenceOrder": 71
+    "sequenceOrder": 71,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO072",
@@ -2989,7 +5157,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 72
+    "sequenceOrder": 72,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO073",
@@ -3000,7 +5176,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 73
+    "sequenceOrder": 73,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO074",
@@ -3011,7 +5195,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 74
+    "sequenceOrder": 74,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO075",
@@ -3022,7 +5214,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 75
+    "sequenceOrder": 75,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO076",
@@ -3033,7 +5233,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 76
+    "sequenceOrder": 76,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO077",
@@ -3044,7 +5252,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 77
+    "sequenceOrder": 77,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO078",
@@ -3055,7 +5271,15 @@
     "example": null,
     "category": "Động từ hay dùng",
     "imageKey": null,
-    "sequenceOrder": 78
+    "sequenceOrder": 78,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO079",
@@ -3066,7 +5290,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 79
+    "sequenceOrder": 79,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO080",
@@ -3077,7 +5309,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 80
+    "sequenceOrder": 80,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO081",
@@ -3088,7 +5328,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 81
+    "sequenceOrder": 81,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO082",
@@ -3099,7 +5347,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 82
+    "sequenceOrder": 82,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO083",
@@ -3110,7 +5366,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 83
+    "sequenceOrder": 83,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO084",
@@ -3121,7 +5385,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 84
+    "sequenceOrder": 84,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO085",
@@ -3132,7 +5404,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 85
+    "sequenceOrder": 85,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO086",
@@ -3143,7 +5423,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 86
+    "sequenceOrder": 86,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO087",
@@ -3154,7 +5442,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 87
+    "sequenceOrder": 87,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO088",
@@ -3165,7 +5461,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 88
+    "sequenceOrder": 88,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO089",
@@ -3176,7 +5480,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 89
+    "sequenceOrder": 89,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO090",
@@ -3187,7 +5499,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 90
+    "sequenceOrder": 90,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO091",
@@ -3198,7 +5518,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 91
+    "sequenceOrder": 91,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO092",
@@ -3209,7 +5537,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 92
+    "sequenceOrder": 92,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO093",
@@ -3220,7 +5556,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 93
+    "sequenceOrder": 93,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO094",
@@ -3231,7 +5575,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 94
+    "sequenceOrder": 94,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO095",
@@ -3242,7 +5594,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 95
+    "sequenceOrder": 95,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO096",
@@ -3253,7 +5613,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 96
+    "sequenceOrder": 96,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO097",
@@ -3264,7 +5632,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 97
+    "sequenceOrder": 97,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO098",
@@ -3275,7 +5651,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 98
+    "sequenceOrder": 98,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO099",
@@ -3286,7 +5670,15 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 99
+    "sequenceOrder": 99,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   },
   {
     "id": "KO100",
@@ -3297,6 +5689,14 @@
     "example": null,
     "category": "Tên vị trí kiểm tra",
     "imageKey": null,
-    "sequenceOrder": 100
+    "sequenceOrder": 100,
+    "sourceVersion": "v1",
+    "romanization": null,
+    "exampleTranslationVi": null,
+    "difficulty": null,
+    "tags": null,
+    "abbreviation": null,
+    "aliases": null,
+    "keywords": null
   }
 ]

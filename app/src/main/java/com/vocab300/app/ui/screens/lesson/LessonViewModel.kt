@@ -6,6 +6,9 @@ import androidx.lifecycle.viewModelScope
 import com.vocab300.app.data.datastore.UserPrefsManager
 import com.vocab300.app.data.repository.ProgressRepository
 import com.vocab300.app.data.repository.VocabularyRepository
+import com.vocab300.app.domain.AnswerResult
+import com.vocab300.app.domain.AnswerValidator
+import com.vocab300.app.domain.EntryClassifier
 import com.vocab300.app.domain.Language
 import com.vocab300.app.domain.LessonPlanner
 import com.vocab300.app.domain.LessonSession
@@ -16,29 +19,32 @@ import com.vocab300.app.tts.TtsManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 sealed class AnswerFeedback {
     object None : AnswerFeedback()
     object Correct : AnswerFeedback()
-    data class Incorrect(val correctAnswer: String) : AnswerFeedback()
+    data class NearlyCorrect(val correctAnswer: String) : AnswerFeedback()
+    data class Incorrect(val userAnswer: String, val correctAnswer: String) : AnswerFeedback()
 }
 
+/**
+ * v1.1.0: KHÔNG còn `hearts`/`outOfHearts`. Vocab300 đã bỏ hoàn toàn hệ thống tim khỏi trải nghiệm
+ * người dùng — người dùng luôn được phép bắt đầu bài và tiếp tục sau khi trả lời sai.
+ * Thay vào đó hiển thị tiến độ câu hiện tại trong bài (VD: 3/10) ở LessonScreen.
+ */
 data class LessonUiState(
     val isLoading: Boolean = true,
     val errorMessage: String? = null,
     val question: Question? = null,
     val questionNumber: Int = 0,
     val totalQuestions: Int = 0,
-    val hearts: Int = 5,
     val feedback: AnswerFeedback = AnswerFeedback.None,
     val ttsAvailable: Boolean = true,
     val ttsMessage: String? = null,
     val matchedPairIndexes: Set<Int> = emptySet(),
     val selectedLeftIndex: Int? = null,
     val wrongMatchPulse: Int = 0, // tăng lên mỗi lần ghép sai để trigger animation
-    val outOfHearts: Boolean = false,
     val finished: Boolean = false,
     val result: com.vocab300.app.domain.LessonResult? = null,
     val startTimeMillis: Long = 0L
@@ -77,18 +83,20 @@ class LessonViewModel(
             }
 
             val lessonWords = allWords.filter { it.id in lesson.wordIds }
-            val questions = QuestionGenerator.generate(lessonWords, allWords)
+            val masteryMap = progressRepository.getMasteryMap(lessonWords.map { it.id })
+            val questions = QuestionGenerator.generate(
+                lessonWords = lessonWords,
+                allWordsSamePool = allWords,
+                masteryByWordId = masteryMap,
+                ttsAvailableForLanguage = { lang -> ttsManager.isLanguageAvailable(lang) }
+            )
             session = LessonSession(questions)
-
-            val stats = userPrefsManager.userStats.first()
 
             _uiState.value = _uiState.value.copy(
                 isLoading = false,
                 question = session?.currentQuestion(),
                 questionNumber = 1,
-                totalQuestions = questions.size,
-                hearts = stats.hearts,
-                outOfHearts = stats.hearts <= 0
+                totalQuestions = questions.size
             )
         }
     }
@@ -113,14 +121,25 @@ class LessonViewModel(
         _uiState.value = _uiState.value.copy(ttsMessage = null)
     }
 
-    /** Dùng cho WORD_TO_MEANING, MEANING_TO_WORD, LISTENING, TYPE_ANSWER. */
-    fun submitChoiceOrTypedAnswer(answer: String) {
+    /** Dùng cho WORD_TO_MEANING, MEANING_TO_WORD, LISTENING (trắc nghiệm — chỉ đúng/sai, không gần đúng). */
+    fun submitChoiceAnswer(answer: String) {
         val currentSession = session ?: return
         val question = currentSession.currentQuestion() ?: return
-        if (_uiState.value.feedback != AnswerFeedback.None) return // đã trả lời câu này, đang chờ bấm Tiếp tục
+        if (_uiState.value.feedback != AnswerFeedback.None) return
 
-        val isCorrect = normalize(answer) == normalize(question.correctAnswer)
-        evaluateAndAdvance(question.wordId, isCorrect, question.correctAnswer)
+        val result = AnswerValidator.validateChoice(answer, question.correctAnswer)
+        evaluateAndAdvance(question.wordId, result, answer, question.correctAnswer)
+    }
+
+    /** Dùng riêng cho TYPE_ANSWER — chấm theo EntryType (hỗ trợ NEARLY_CORRECT với từ đơn dài). */
+    fun submitTypedAnswer(answer: String) {
+        val currentSession = session ?: return
+        val question = currentSession.currentQuestion() ?: return
+        if (_uiState.value.feedback != AnswerFeedback.None) return
+
+        val entryType = EntryClassifier.classify(question.correctAnswer)
+        val result = AnswerValidator.validate(answer, question.correctAnswer, entryType)
+        evaluateAndAdvance(question.wordId, result, answer, question.correctAnswer)
     }
 
     /** Người dùng chọn 1 từ bên trái trong dạng MATCHING. */
@@ -141,7 +160,8 @@ class LessonViewModel(
                 val question = session?.currentQuestion()
                 if (question != null && newMatched.size >= question.matchingPairs.size) {
                     // Hoàn thành ghép cặp -> tính là 1 câu (đúng nếu không ghép sai lần nào)
-                    evaluateAndAdvance(question.wordId, !matchingHadMistake, "")
+                    val result = if (matchingHadMistake) AnswerResult.NEARLY_CORRECT else AnswerResult.CORRECT
+                    evaluateAndAdvance(question.wordId, result, "", "")
                     matchingHadMistake = false
                 }
             } else {
@@ -156,33 +176,29 @@ class LessonViewModel(
 
     fun skipListeningQuestion() {
         val currentSession = session ?: return
-        val question = currentSession.currentQuestion() ?: return
-        // Bỏ qua câu nghe: không trừ tim, không cộng XP, coi như đã xử lý, chuyển câu tiếp theo
-        currentSession.submitAnswer(isCorrect = true) // tránh phạt người dùng vì lỗi thiết bị, không phải lỗi kiến thức
+        currentSession.currentQuestion() ?: return
+        // Bỏ qua câu nghe vì thiết bị không hỗ trợ TTS: không phải lỗi kiến thức, không phạt.
+        currentSession.submitAnswer(AnswerResult.CORRECT)
         goToNextQuestionOrFinish()
     }
 
-    private fun evaluateAndAdvance(wordId: String, isCorrect: Boolean, correctAnswerDisplay: String) {
+    private fun evaluateAndAdvance(wordId: String, result: AnswerResult, userAnswer: String, correctAnswerDisplay: String) {
         viewModelScope.launch {
-            progressRepository.recordAnswer(wordId, isCorrect, System.currentTimeMillis())
-            val stats = userPrefsManager.userStats.first()
+            progressRepository.recordAnswer(wordId, result, System.currentTimeMillis())
 
-            _uiState.value = _uiState.value.copy(
-                feedback = if (isCorrect) AnswerFeedback.Correct else AnswerFeedback.Incorrect(correctAnswerDisplay),
-                hearts = stats.hearts
-            )
-
-            session?.submitAnswer(isCorrect)
-
-            if (stats.hearts <= 0) {
-                _uiState.value = _uiState.value.copy(outOfHearts = true)
+            val feedback = when (result) {
+                AnswerResult.CORRECT -> AnswerFeedback.Correct
+                AnswerResult.NEARLY_CORRECT -> AnswerFeedback.NearlyCorrect(correctAnswerDisplay)
+                AnswerResult.INCORRECT -> AnswerFeedback.Incorrect(userAnswer, correctAnswerDisplay)
             }
+            _uiState.value = _uiState.value.copy(feedback = feedback)
+
+            session?.submitAnswer(result)
         }
     }
 
-    /** Gọi khi người dùng bấm "Tiếp tục" sau khi xem phản hồi đúng/sai. */
+    /** Gọi khi người dùng bấm "Tiếp tục" sau khi xem phản hồi. Không còn điều kiện chặn nào (đã bỏ tim). */
     fun continueToNext() {
-        if (_uiState.value.outOfHearts) return
         goToNextQuestionOrFinish()
     }
 
@@ -208,7 +224,8 @@ class LessonViewModel(
             val result = ScoringEngine.calculateResult(
                 totalQuestions = currentSession.totalQuestions,
                 correctFirstTry = currentSession.correctFirstTry,
-                timeSpentMillis = timeSpent
+                timeSpentMillis = timeSpent,
+                nearlyCorrectFirstTry = currentSession.nearlyCorrectFirstTry
             )
             progressRepository.completeLesson(
                 language = language.name,
@@ -219,8 +236,6 @@ class LessonViewModel(
             _uiState.value = _uiState.value.copy(finished = true, result = result)
         }
     }
-
-    private fun normalize(text: String): String = text.trim().lowercase()
 
     class Factory(
         private val language: Language,

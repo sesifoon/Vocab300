@@ -17,12 +17,16 @@ private val Context.dataStore by preferencesDataStore(name = "vocab300_prefs")
 
 enum class DarkModeOption { SYSTEM, LIGHT, DARK }
 
-/** Trạng thái tổng hợp hiển thị ở Home / Stats. */
+/**
+ * Trạng thái tổng hợp hiển thị ở Home / Stats.
+ *
+ * v1.1.0: đã bỏ hệ thống tim khỏi trải nghiệm người dùng (xem CHANGELOG.md).
+ * `hearts`/`maxHearts` KHÔNG còn nằm trong model này — dữ liệu tim cũ trong DataStore
+ * (nếu có từ bản trước) vẫn được giữ nguyên key để tương thích ngược, chỉ không đọc vào đây nữa.
+ */
 data class UserStats(
     val totalXp: Int,
     val xpToday: Int,
-    val hearts: Int,
-    val maxHearts: Int,
     val streakDays: Int,
     val dailyGoal: Int,
     val soundEnabled: Boolean,
@@ -39,6 +43,7 @@ class UserPrefsManager(private val context: Context) {
 
     private object Keys {
         val IMPORT_DONE = booleanPreferencesKey("import_done")
+        val IMPORTED_SOURCE_VERSION = stringPreferencesKey("imported_source_version")
         val ONBOARDING_DONE = booleanPreferencesKey("onboarding_done")
         val TOTAL_XP = intPreferencesKey("total_xp")
         val XP_TODAY = intPreferencesKey("xp_today")
@@ -56,6 +61,7 @@ class UserPrefsManager(private val context: Context) {
     }
 
     companion object {
+        @Deprecated("Vocab300 v1.1.0 đã bỏ hệ thống tim. Giữ lại chỉ để tương thích ngược dữ liệu cũ.")
         const val MAX_HEARTS = 5
         const val XP_PER_CORRECT = 10
     }
@@ -67,18 +73,9 @@ class UserPrefsManager(private val context: Context) {
         val xpDate = prefs[Keys.XP_TODAY_DATE]
         val xpToday = if (xpDate == today) prefs[Keys.XP_TODAY] ?: 0 else 0
 
-        val heartsDate = prefs[Keys.HEARTS_DATE]
-        val hearts = if (heartsDate == today) {
-            prefs[Keys.HEARTS] ?: MAX_HEARTS
-        } else {
-            MAX_HEARTS // sang ngày mới, hồi đầy tim
-        }
-
         UserStats(
             totalXp = prefs[Keys.TOTAL_XP] ?: 0,
             xpToday = xpToday,
-            hearts = hearts,
-            maxHearts = MAX_HEARTS,
             streakDays = prefs[Keys.STREAK_DAYS] ?: 0,
             dailyGoal = prefs[Keys.DAILY_GOAL] ?: 10,
             soundEnabled = prefs[Keys.SOUND_ENABLED] ?: true,
@@ -90,11 +87,24 @@ class UserPrefsManager(private val context: Context) {
         )
     }
 
+    @Deprecated("Dùng getImportedSourceVersion()/setImportedSourceVersion() — v1.1.0 chuyển sang so sánh sourceVersion thay vì cờ boolean, để hỗ trợ import bổ sung khi dữ liệu tăng lên.")
     suspend fun isImportDone(): Boolean =
         context.dataStore.data.map { it[Keys.IMPORT_DONE] ?: false }.first()
 
+    @Deprecated("Dùng setImportedSourceVersion(version) thay thế.")
     suspend fun setImportDone() {
         context.dataStore.edit { it[Keys.IMPORT_DONE] = true }
+    }
+
+    /** sourceVersion của lần import gần nhất; null nếu chưa từng import (app mới cài lần đầu). */
+    suspend fun getImportedSourceVersion(): String? =
+        context.dataStore.data.map { it[Keys.IMPORTED_SOURCE_VERSION] }.first()
+
+    suspend fun setImportedSourceVersion(version: String) {
+        context.dataStore.edit {
+            it[Keys.IMPORTED_SOURCE_VERSION] = version
+            it[Keys.IMPORT_DONE] = true // giữ đồng bộ cờ cũ để tương thích ngược với mọi code chưa cập nhật
+        }
     }
 
     suspend fun setOnboardingDone(dailyGoal: Int) {
@@ -129,6 +139,11 @@ class UserPrefsManager(private val context: Context) {
     }
 
     /** Trừ 1 tim khi trả lời sai. Không cho xuống dưới 0. */
+    @Deprecated(
+        "Vocab300 v1.1.0 đã bỏ hệ thống tim khỏi trải nghiệm người dùng. " +
+            "Hàm này không còn được gọi ở bất kỳ đâu trong app, chỉ giữ lại để không phá vỡ " +
+            "dữ liệu DataStore cũ của người dùng đã cài bản trước."
+    )
     suspend fun loseHeart() {
         val today = todayString()
         context.dataStore.edit { prefs ->
@@ -139,6 +154,11 @@ class UserPrefsManager(private val context: Context) {
         }
     }
 
+    @Deprecated(
+        "Vocab300 v1.1.0 đã bỏ hệ thống tim khỏi trải nghiệm người dùng. " +
+            "Hàm này không còn được gọi ở bất kỳ đâu trong app, chỉ giữ lại để không phá vỡ " +
+            "dữ liệu DataStore cũ của người dùng đã cài bản trước."
+    )
     suspend fun refillHearts() {
         context.dataStore.edit { prefs ->
             prefs[Keys.HEARTS] = MAX_HEARTS
@@ -193,8 +213,6 @@ class UserPrefsManager(private val context: Context) {
             prefs[Keys.TOTAL_XP] = 0
             prefs[Keys.XP_TODAY] = 0
             prefs[Keys.XP_TODAY_DATE] = todayString()
-            prefs[Keys.HEARTS] = MAX_HEARTS
-            prefs[Keys.HEARTS_DATE] = todayString()
             prefs[Keys.STREAK_DAYS] = 0
             prefs.remove(Keys.LAST_STUDY_DATE)
             prefs[Keys.CURRENT_LESSON_EN] = 0

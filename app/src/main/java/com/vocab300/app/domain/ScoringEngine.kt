@@ -15,11 +15,15 @@ object ScoringEngine {
         totalQuestions: Int,
         correctFirstTry: Int,
         timeSpentMillis: Long,
-        xpPerCorrect: Int = XP_PER_CORRECT
+        xpPerCorrect: Int = XP_PER_CORRECT,
+        nearlyCorrectFirstTry: Int = 0
     ): LessonResult {
         require(totalQuestions > 0) { "totalQuestions phải > 0" }
         val clampedCorrect = correctFirstTry.coerceIn(0, totalQuestions)
-        val percent = ((clampedCorrect.toDouble() / totalQuestions) * 100).roundToInt()
+        val clampedNearly = nearlyCorrectFirstTry.coerceIn(0, totalQuestions - clampedCorrect)
+        // NEARLY_CORRECT tính nửa trọng số — "nhẹ hơn" đáp án đúng hoàn toàn, nhưng vẫn được ghi nhận.
+        val weightedScore = clampedCorrect + (clampedNearly * 0.5)
+        val percent = ((weightedScore / totalQuestions) * 100).roundToInt()
         return LessonResult(
             totalQuestions = totalQuestions,
             correctFirstTry = clampedCorrect,

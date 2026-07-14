@@ -1,0 +1,33 @@
+ .github/workflows/build-apk.yml                |    8 [32m+[m[31m-[m
+ BUILD_REPORT.md                                |   38 [32m+[m
+ Vocab300-v1.1.0-ci-ready.zip                   |  Bin [31m471237[m -> [32m0[m bytes
+ app/build.gradle.kts                           |   18 [32m+[m[31m-[m
+ app/src/main/assets/vocabulary.json            | 3000 [32m+++++++++++++++[m[31m--[m
+ .../app/data/datastore/UserPrefsManager.kt     |   46 [32m+[m[31m-[m
+ .../app/data/importer/VocabularyImporter.kt    |   57 [32m+[m[31m-[m
+ .../app/data/local/Vocab300Database.kt         |   28 [32m+[m[31m-[m
+ .../data/local/entity/VocabularyWordEntity.kt  |   30 [32m+[m[31m-[m
+ .../app/data/repository/ProgressRepository.kt  |   37 [32m+[m[31m-[m
+ .../com/vocab300/app/domain/ImportDecision.kt  |   20 [32m+[m[31m-[m
+ .../com/vocab300/app/domain/LessonSession.kt   |   43 [32m+[m[31m-[m
+ .../com/vocab300/app/domain/MasteryUpdater.kt  |   13 [32m+[m
+ .../vocab300/app/domain/QuestionGenerator.kt   |  188 [32m+[m[31m-[m
+ .../com/vocab300/app/domain/ReviewSelector.kt  |   80 [32m+[m[31m-[m
+ .../com/vocab300/app/domain/ScoringEngine.kt   |    8 [32m+[m[31m-[m
+ .../app/ui/components/CommonComponents.kt      |    4 [32m+[m[31m-[m
+ .../vocab300/app/ui/screens/home/HomeScreen.kt |   18 [32m+[m[31m-[m
+ .../app/ui/screens/lesson/LessonScreen.kt      |   82 [32m+[m[31m-[m
+ .../app/ui/screens/lesson/LessonViewModel.kt   |   87 [32m+[m[31m-[m
+ .../ui/screens/onboarding/OnboardingScreen.kt  |    7 [32m+[m[31m-[m
+ .../app/ui/screens/result/ResultScreen.kt      |    7 [32m+[m[31m-[m
+ .../app/ui/screens/review/ReviewScreen.kt      |   17 [32m+[m[31m-[m
+ .../app/ui/screens/review/ReviewViewModel.kt   |    6 [32m+[m[31m-[m
+ .../app/ui/screens/settings/SettingsScreen.kt  |   23 [32m+[m[31m-[m
+ .../app/ui/screens/stats/StatsScreen.kt        |   55 [32m+[m[31m-[m
+ .../app/ui/screens/stats/StatsViewModel.kt     |   16 [32m+[m[31m-[m
+ .../ui/screens/worddetail/WordDetailScreen.kt  |    8 [32m+[m[31m-[m
+ app/src/main/res/values-night/themes.xml       |    1 [31m-[m
+ app/src/main/res/values/themes.xml             |    1 [31m-[m
+ .../vocab300/app/domain/ImportDecisionTest.kt  |   17 [32m+[m
+ .../vocab300/app/domain/ReviewSelectorTest.kt  |   60 [32m+[m
+ 32 files changed, 3437 insertions(+), 586 deletions(-)

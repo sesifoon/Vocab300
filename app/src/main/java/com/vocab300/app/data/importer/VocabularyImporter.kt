@@ -10,14 +10,19 @@ import kotlinx.coroutines.withContext
 import org.json.JSONArray
 
 /**
- * Đọc file assets/vocabulary.json (đúng 300 từ đã chuẩn hoá từ file nguồn của người dùng)
- * và import vào Room MỘT LẦN DUY NHẤT khi ứng dụng chạy lần đầu.
+ * Đọc file assets/vocabulary.json và import vào Room.
  *
- * Cơ chế chống import trùng:
- * 1. Kiểm tra cờ `import_done` trong DataStore.
- * 2. Kiểm tra thêm số dòng hiện có trong bảng vocabulary_words (phòng trường hợp cờ bị mất
- *    nhưng DB vẫn còn dữ liệu, hoặc ngược lại).
- * Quyết định cuối cùng nằm ở [ImportDecision.shouldImport] (logic thuần, có unit test riêng).
+ * v1.1.0: KHÔNG còn phụ thuộc vào số lượng từ cố định (300). Quyết định import dựa trên
+ * `sourceVersion` của bộ dữ liệu (xem [ImportDecision.shouldImport]):
+ * - Cài lần đầu (chưa có sourceVersion nào được lưu) -> import toàn bộ.
+ * - `sourceVersion` trong asset thay đổi (VD: nâng từ 300 lên 1.000 từ) -> chạy lại import.
+ *   Vì dùng `OnConflictStrategy.IGNORE`, các từ đã tồn tại (cùng `id`) KHÔNG bị ghi đè hay
+ *   trùng lặp — chỉ những từ MỚI (id chưa có trong DB) được thêm vào. Tiến độ học (mastery, XP,
+ *   streak, lịch ôn) của các từ cũ được bảo toàn hoàn toàn vì bảng word_progress không bị đụng tới.
+ * - `sourceVersion` không đổi -> bỏ qua, không parse lại JSON mỗi lần mở app.
+ *
+ * DEFAULT_SOURCE_VERSION dùng khi 1 bản ghi trong asset không khai báo sourceVersion (an toàn cho
+ * dữ liệu cũ chưa có trường này).
  */
 class VocabularyImporter(
     private val context: Context,
@@ -27,25 +32,28 @@ class VocabularyImporter(
 
     companion object {
         const val ASSET_FILE_NAME = "vocabulary.json"
-        const val EXPECTED_WORD_COUNT = 300
+        const val DEFAULT_SOURCE_VERSION = "v1"
     }
 
     suspend fun importIfNeeded() = withContext(Dispatchers.IO) {
-        val importFlagSet = userPrefsManager.isImportDone()
-        val currentCount = vocabularyDao.count()
+        val jsonText = context.assets.open(ASSET_FILE_NAME).bufferedReader(Charsets.UTF_8).use { it.readText() }
+        val jsonArray = JSONArray(jsonText)
 
-        if (!ImportDecision.shouldImport(importFlagSet, currentCount, EXPECTED_WORD_COUNT)) {
-            // Đảm bảo cờ được set đúng nếu DB đã đủ dữ liệu nhưng cờ vì lý do nào đó chưa set
-            if (currentCount >= EXPECTED_WORD_COUNT && !importFlagSet) {
-                userPrefsManager.setImportDone()
-            }
+        // sourceVersion đại diện cho cả bộ dữ liệu = sourceVersion của bản ghi đầu tiên (mọi bản ghi
+        // trong 1 lần xuất dữ liệu nên có cùng sourceVersion; xem DATA_IMPORT_GUIDE.md).
+        val currentSourceVersion = if (jsonArray.length() > 0) {
+            jsonArray.getJSONObject(0).optStringOrNull("sourceVersion") ?: DEFAULT_SOURCE_VERSION
+        } else {
+            DEFAULT_SOURCE_VERSION
+        }
+
+        val storedSourceVersion = userPrefsManager.getImportedSourceVersion()
+
+        if (!ImportDecision.shouldImport(storedSourceVersion, currentSourceVersion)) {
             return@withContext
         }
 
-        val jsonText = context.assets.open(ASSET_FILE_NAME).bufferedReader(Charsets.UTF_8).use { it.readText() }
-        val jsonArray = JSONArray(jsonText)
         val words = mutableListOf<VocabularyWordEntity>()
-
         for (i in 0 until jsonArray.length()) {
             val obj = jsonArray.getJSONObject(i)
             words.add(
@@ -58,13 +66,22 @@ class VocabularyImporter(
                     example = obj.optStringOrNull("example"),
                     category = obj.getString("category"),
                     imageKey = obj.optStringOrNull("imageKey"),
-                    sequenceOrder = obj.getInt("sequenceOrder")
+                    sequenceOrder = obj.getInt("sequenceOrder"),
+                    romanization = obj.optStringOrNull("romanization"),
+                    exampleTranslationVi = obj.optStringOrNull("exampleTranslationVi"),
+                    difficulty = obj.optStringOrNull("difficulty"),
+                    tags = obj.optStringOrNull("tags"),
+                    abbreviation = if (obj.has("abbreviation") && !obj.isNull("abbreviation")) obj.getBoolean("abbreviation") else null,
+                    aliases = obj.optStringOrNull("aliases"),
+                    keywords = obj.optStringOrNull("keywords"),
+                    sourceVersion = obj.optStringOrNull("sourceVersion") ?: DEFAULT_SOURCE_VERSION
                 )
             )
         }
 
+        // IGNORE: từ đã có (cùng id) được giữ nguyên -> không ghi đè, không mất liên kết tiến độ.
         vocabularyDao.insertAll(words)
-        userPrefsManager.setImportDone()
+        userPrefsManager.setImportedSourceVersion(currentSourceVersion)
     }
 }
 
