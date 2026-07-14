@@ -1,0 +1,77 @@
+name: Build Vocab300 APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+
+      - name: Set up JDK 17 (Temurin)
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+
+      - name: Install required Android SDK components
+        run: |
+          sdkmanager --install "platforms;android-34" "build-tools;34.0.0" "platform-tools"
+          sdkmanager --licenses || true
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.7'
+
+      - name: Generate Gradle wrapper (wrapper files are not committed to the repo)
+        run: gradle wrapper --gradle-version 8.7
+
+      - name: Verify Gradle wrapper files exist
+        run: |
+          test -f gradlew || (echo "::error::gradlew missing after 'gradle wrapper'" && exit 1)
+          test -f gradlew.bat || (echo "::error::gradlew.bat missing after 'gradle wrapper'" && exit 1)
+          test -f gradle/wrapper/gradle-wrapper.jar || (echo "::error::gradle-wrapper.jar missing after 'gradle wrapper'" && exit 1)
+          test -f gradle/wrapper/gradle-wrapper.properties || (echo "::error::gradle-wrapper.properties missing" && exit 1)
+          echo "All Gradle wrapper files present."
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build debug APK
+        run: ./gradlew --no-daemon assembleDebug --stacktrace
+
+      - name: Run unit tests
+        run: ./gradlew --no-daemon testDebugUnitTest --stacktrace
+
+      - name: Run lint
+        run: ./gradlew --no-daemon lintDebug --stacktrace
+
+      - name: Upload debug APK
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Vocab300-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+
+      - name: Upload test and lint reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Vocab300-test-lint-reports
+          path: |
+            app/build/reports/tests/testDebugUnitTest/**
+            app/build/test-results/testDebugUnitTest/**
+            app/build/reports/lint-results-debug.html
+            app/build/reports/lint-results-debug.xml
+          if-no-files-found: warn

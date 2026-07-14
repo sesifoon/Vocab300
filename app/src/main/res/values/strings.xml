@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vocab300</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Chào mừng đến với Vocab300</string>
+    <string name="onboarding_subtitle">Học 300 từ vựng Anh – Hàn mỗi ngày, theo lộ trình từng bước</string>
+    <string name="onboarding_goal_question">Bạn muốn học bao nhiêu từ mỗi ngày?</string>
+    <string name="onboarding_start">Bắt đầu học</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Xin chào 👋</string>
+    <string name="home_continue">Tiếp tục bài học</string>
+    <string name="home_streak">Chuỗi ngày học</string>
+    <string name="home_hearts">Tim</string>
+    <string name="home_xp_today">XP hôm nay</string>
+    <string name="home_goal">Mục tiêu ngày</string>
+    <string name="home_english">Tiếng Anh</string>
+    <string name="home_korean">Tiếng Hàn</string>
+    <string name="home_review_words">Từ cần ôn</string>
+    <string name="home_search">Tìm kiếm từ vựng</string>
+    <string name="home_favorites">Từ yêu thích</string>
+    <string name="home_stats">Thống kê</string>
+    <string name="home_settings">Cài đặt</string>
+
+    <!-- Lesson list -->
+    <string name="lesson_list_title">Lộ trình học</string>
+    <string name="lesson_locked">Đã khóa</string>
+    <string name="lesson_in_progress">Đang học</string>
+    <string name="lesson_completed">Hoàn thành</string>
+
+    <!-- Lesson -->
+    <string name="lesson_exit_title">Thoát bài học?</string>
+    <string name="lesson_exit_message">Tiến độ của câu hiện tại sẽ không được lưu. Bạn có chắc muốn thoát?</string>
+    <string name="lesson_exit_confirm">Thoát</string>
+    <string name="lesson_exit_cancel">Tiếp tục học</string>
+    <string name="lesson_correct">Chính xác! 🎉</string>
+    <string name="lesson_incorrect">Chưa đúng</string>
+    <string name="lesson_correct_answer_is">Đáp án đúng là</string>
+    <string name="lesson_continue">Tiếp tục</string>
+    <string name="lesson_no_hearts_title">Bạn đã hết tim</string>
+    <string name="lesson_no_hearts_message">Hãy quay lại vào ngày mai hoặc ôn tập để lấy lại tim.</string>
+    <string name="lesson_type_answer">Nhập từ bạn nghe/nhìn thấy</string>
+    <string name="lesson_choose_meaning">Chọn nghĩa đúng của từ</string>
+    <string name="lesson_choose_word">Chọn từ đúng với nghĩa sau</string>
+    <string name="lesson_match_pairs">Ghép từ với nghĩa tương ứng</string>
+    <string name="lesson_listen_choose">Nghe và chọn đáp án đúng</string>
+    <string name="lesson_play_audio">Nghe phát âm</string>
+    <string name="lesson_tts_unavailable">Không phát được âm thanh trên thiết bị này. Bạn có thể bỏ qua câu này.</string>
+    <string name="lesson_skip">Bỏ qua</string>
+
+    <!-- Result -->
+    <string name="result_title">Kết quả bài học</string>
+    <string name="result_score">Điểm</string>
+    <string name="result_correct_count">Số câu đúng</string>
+    <string name="result_xp_earned">XP nhận được</string>
+    <string name="result_time_spent">Thời gian học</string>
+    <string name="result_passed">Bạn đã hoàn thành bài học!</string>
+    <string name="result_failed">Chưa đạt, hãy thử lại nhé</string>
+    <string name="result_continue">Về trang chủ</string>
+    <string name="result_retry">Học lại</string>
+
+    <!-- Review -->
+    <string name="review_title">Ôn tập</string>
+    <string name="review_empty">Chưa có từ nào cần ôn tập. Hãy học thêm bài mới!</string>
+    <string name="review_start">Bắt đầu ôn tập</string>
+
+    <!-- Stats -->
+    <string name="stats_title">Thống kê cá nhân</string>
+    <string name="stats_total_xp">Tổng XP</string>
+    <string name="stats_streak">Chuỗi ngày học</string>
+    <string name="stats_words_learned">Từ đã học</string>
+    <string name="stats_lessons_completed">Bài đã hoàn thành</string>
+    <string name="stats_mastery_breakdown">Mức độ thành thạo</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_daily_goal">Mục tiêu học mỗi ngày</string>
+    <string name="settings_sound">Âm thanh</string>
+    <string name="settings_dark_mode">Chế độ tối</string>
+    <string name="settings_reset_title">Đặt lại tiến độ</string>
+    <string name="settings_reset_message">Toàn bộ tiến độ học, XP, tim và chuỗi ngày sẽ bị xóa vĩnh viễn. Bạn có chắc chắn?</string>
+    <string name="settings_reset_confirm">Đặt lại</string>
+    <string name="settings_reset_cancel">Hủy</string>
+    <string name="settings_reset_done">Đã đặt lại tiến độ</string>
+
+    <!-- Search / Favorites / Word detail -->
+    <string name="search_title">Tìm kiếm từ vựng</string>
+    <string name="search_hint">Nhập từ hoặc nghĩa cần tìm…</string>
+    <string name="search_empty">Không tìm thấy từ phù hợp</string>
+    <string name="favorites_title">Từ yêu thích</string>
+    <string name="favorites_empty">Bạn chưa đánh dấu từ yêu thích nào</string>
+    <string name="word_detail_title">Chi tiết từ</string>
+    <string name="word_mark_known">Đánh dấu đã thuộc</string>
+    <string name="word_mark_unknown">Bỏ đánh dấu đã thuộc</string>
+
+    <!-- Common -->
+    <string name="loading">Đang tải…</string>
+    <string name="error_generic">Đã có lỗi xảy ra. Vui lòng thử lại.</string>
+    <string name="empty_generic">Chưa có dữ liệu</string>
+    <string name="back">Quay lại</string>
+</resources>
