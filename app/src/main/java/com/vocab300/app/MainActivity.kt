@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import com.vocab300.app.data.datastore.DarkModeOption
 import com.vocab300.app.ui.navigation.Vocab300NavGraph
@@ -22,9 +23,10 @@ class MainActivity : ComponentActivity() {
         val app = application as VocabApp
 
         setContent {
-            val darkModeOption by app.userPrefsManager.userStats
-                .map { it.darkMode }
-                .collectAsState(initial = DarkModeOption.SYSTEM)
+            val darkModeOptionFlow = remember(app.userPrefsManager) {
+                app.userPrefsManager.userStats.map { it.darkMode }
+            }
+            val darkModeOption by darkModeOptionFlow.collectAsState(initial = DarkModeOption.SYSTEM)
 
             val useDarkTheme = when (darkModeOption) {
                 DarkModeOption.LIGHT -> false
